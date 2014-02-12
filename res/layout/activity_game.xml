@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sand" >
+
+    <TextView
+        android:id="@+id/playerCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/turn"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/namePlayerCalled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/playerCall"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/playerCall"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button
+        android:id="@+id/doubtIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namePlayerCalled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/red"
+        android:text="@string/bdoubt" />
+    
+    <Button
+        android:id="@+id/rollTheDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doubtIt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/greenish"
+        android:text="@string/bthrowdices" />
+
+    <ImageButton
+        android:id="@+id/yourDices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollTheDice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/sand"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/dice1" />
+    
+    <Button
+        android:id="@+id/scorehide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yourDices"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/sand" />
+    
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scorehide"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/sand" />
+
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/bend" />
+
+    
+
+</RelativeLayout>
